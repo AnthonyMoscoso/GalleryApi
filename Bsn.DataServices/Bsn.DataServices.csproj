@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bsn.AzureServices\Bsn.AzureServices.csproj" />
+    <ProjectReference Include="..\Bsn.EncrypterService\Bsn.EncrypterService.csproj" />
+    <ProjectReference Include="..\Core.Model\Core.Model.csproj" />
+    <ProjectReference Include="..\Core.Utilities\Core.Utilities.csproj" />
+    <ProjectReference Include="..\Infra.DataAccess\Infra.DataAccess.csproj" />
+    <ProjectReference Include="..\Model.Dto\Model.Dto.csproj" />
+  </ItemGroup>
+
+</Project>

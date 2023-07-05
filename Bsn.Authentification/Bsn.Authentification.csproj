@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols" Version="6.21.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bsn.EncrypterService\Bsn.EncrypterService.csproj" />
+    <ProjectReference Include="..\Bsn.Utilities\Bsn.Utilities.csproj" />
+    <ProjectReference Include="..\Core.Utilities\Core.Utilities.csproj" />
+    <ProjectReference Include="..\Infra.DataAccess\Infra.DataAccess.csproj" />
+    <ProjectReference Include="..\Model.Dto\Model.Dto.csproj" />
+    <ProjectReference Include="..\Model.Entity\Model.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

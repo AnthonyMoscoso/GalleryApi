@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bsn.Authentification\Bsn.Authentification.csproj" />
+    <ProjectReference Include="..\Bsn.AzureServices\Bsn.AzureServices.csproj" />
+    <ProjectReference Include="..\Bsn.DataServices\Bsn.DataServices.csproj" />
+    <ProjectReference Include="..\Bsn.MapperService\Bsn.MapperService.csproj" />
+    <ProjectReference Include="..\Bsn.Utilities\Bsn.Utilities.csproj" />
+    <ProjectReference Include="..\Bsn.ValidationService\Bsn.ValidationService.csproj" />
+    <ProjectReference Include="..\Core.Utilities\Core.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
